@@ -46,3 +46,16 @@ Logfile is /var/log/cuda-installer.log
 
 
 ```
+
+
+Steps to run CUDA PTX on NVIDA GPU
+
+```
+
+1.  /usr/local/cuda-10.2/bin/nvcc -ptx demo.cu -o demo.ptx
+2.  /usr/local/cuda-10.2/bin/nvcc demo_run.cu -o run_ptx -lcuda 
+3.  ./run_ptx
+
+
+```
+
